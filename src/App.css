@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+html, body {
+  height: auto;
+  overflow-y: auto;
+}
+
+.full-page-container {
+  min-height: 100vh; /* Use min-height instead of height */
+  overflow-y: auto; /* Allow vertical scrolling */
+}

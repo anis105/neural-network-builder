@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { MantineProvider, Container, Title, Paper, Space } from '@mantine/core';
+import AddLayerForm from './components/AddLayerForm';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <MantineProvider withGlobalStyles withNormalizeCSS theme={{ colorScheme: 'light' }}>
+            <Container size="sm" style={{ marginTop: '40px' }}>
+                <Title align="center">Neural Network Configuration Builder</Title>
+                <Space h="md" /> {/* Adds some space between the title and the form */}
+                <Paper shadow="xs" padding="md" radius="md">
+                    <AddLayerForm />
+                </Paper>
+            </Container>
+        </MantineProvider>
+    );
 }
 
 export default App;

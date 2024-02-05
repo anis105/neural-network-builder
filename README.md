@@ -1,3 +1,50 @@
+
+# Neural Network Configuration Builder
+
+This project provides a web-based interface for creating and configuring neural network models. Users can upload a JSON configuration file, add or modify layers, and compute results based on the configured model. The application utilizes TensorFlow.js for model creation and computation directly in the browser.
+
+## Features
+
+- Upload a JSON file to load initial neural network configuration.
+- Add new layers with specified parameters (e.g., number of input and output features for linear layers).
+- Compute and download the results of the neural network computation.
+
+## Usage
+
+1. **Start the Application**: Ensure the application is running and accessible via a web browser.
+2. **Upload Configuration**: Use the "Choose File" button to upload a neural network configuration JSON file.
+3. **Add Layers (Optional)**: Click the "Add Layer" button to specify additional layers for the neural network.
+4. **Compute Results**: Click the "Compute and Download Results" button to process the neural network and download the output.
+
+## Sample Neural Network Configuration JSON
+
+```json
+{
+  "layers": [
+    {
+      "type": "linear",
+      "in_features": 784,
+      "out_features": 128
+    },
+    {
+      "type": "linear",
+      "in_features": 128,
+      "out_features": 64
+    }
+  ]
+}
+```
+
+## Development
+
+This project is built using React and Mantine for the frontend, with TensorFlow.js for neural network operations.
+
+## License
+
+This project is open-source and available under the MIT license.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

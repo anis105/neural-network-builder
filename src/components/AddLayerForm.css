@@ -1,0 +1,53 @@
+/* Style for the button container */
+.group-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Style for the buttons */
+.button {
+    margin-top: 10px;
+}
+
+/* Style for the file input */
+.file-input {
+    display: none;
+}
+
+/* Style for the file input label */
+.file-input-label {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    cursor: pointer;
+    color: #007BFF; /* Change to your desired color */
+    font-weight: bold;
+}
+
+/* Style for the modal */
+.modal {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style for the modal buttons */
+.modal-button {
+    margin-top: 15px;
+}
+
+/* Style for the layers container */
+.layers-container {
+    margin-top: 20px;
+}
+
+/* Style for individual layers */
+.layer {
+    background-color: #f0f0f0; /* Change to your desired background color */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
