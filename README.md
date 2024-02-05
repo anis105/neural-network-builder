@@ -39,20 +39,6 @@ This project provides a web-based interface for creating and configuring neural 
 
 This project is built using React and Mantine for the frontend, with TensorFlow.js for neural network operations.
 
-## License
-
-This project is open-source and available under the MIT license.
-
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
 ### `npm start`
 
 Runs the app in the development mode.\
